@@ -6,42 +6,48 @@
 <head>
 	<meta charset="UTF-8">
 	<link rel="stylesheet" type="text/css" href="style.css">
-		
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 <title>IndexPage</title>
 </head>
 
 <!--Start of Tawk.to Script-->
 <script type="text/javascript">
-var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
-(function(){
-var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
-s1.async=true;
-s1.src='https://embed.tawk.to/641449444247f20fefe67780/1grnjsd6k';
-s1.charset='UTF-8';
-s1.setAttribute('crossorigin','*');
-s0.parentNode.insertBefore(s1,s0);
-})();
+	var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+	(function(){
+	var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+	s1.async=true;
+	s1.src='https://embed.tawk.to/641449444247f20fefe67780/1grnjsd6k';
+	s1.charset='UTF-8';
+	s1.setAttribute('crossorigin','*');
+	s0.parentNode.insertBefore(s1,s0);
+	})();
 </script>
 <!--End of Tawk.to Script-->
 
-<body id="target">
-	<header>
-		<h1 id="index"><a href="index.jsp">MyJSP</a></h1>
-	</header>
-	
-	<nav>
-		<ol>
-			<li><a href="step1/step1.jsp">1장 JSP프로젝트 작성</a></li>
-			<li><a href="step2/step2.jsp">2장 JSP폼 태그 활용</a></li>
-		</ol>
-	</nav>
-	
-	<div id="control">
-    	<input type="button" value="white" onclick="document.getElementById('target').className='white'" />
-    	<input type="button" value="black" onclick="document.getElementById('target').className='black'"  />
-  	</div>
+
+<body id="target" class="white">
+<div class="container">
+  <div class="row">
+    <div class="col header">
+      <header>
+			<h1 id="index"><a href="index.jsp">MyJSP</a></h1>
+		</header>
+    </div>
+  </div>
   
-	<article>		
+  <div class="row">
+    <div class="col-3 sidebar">
+      <nav>
+		<ol class="no-number">
+			<br><li><a href="step1/step1.jsp">1장 JSP프로젝트 작성</a></li>
+			<li><a href="step2/step2.jsp">2장 JSP폼 태그 활용</a></li>
+			<li><a href="step3/step3.jsp">3장 유효성검사</a></li>
+		</ol>
+	 </nav>
+    </div>
+    <div class="col-9 main">
+      	<input type="button" value="white" onclick="document.getElementById('target').className='white'" />
+    	<input type="button" value="black" onclick="document.getElementById('target').className='black'"  />
 		<h2>Welcome</h2>
 		JSP를 배우는 모든 분들을 환영합니다. JSP를 배우기위한 기초자료부터 프로젝트로 구현하고 있습니다!<br><br>
 		
@@ -64,6 +70,8 @@ s0.parentNode.insertBefore(s1,s0);
 		   })();
 		</script>
 		<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
-	</article>	
+    </div>
+  </div>
+</div>
 </body>
 </html>

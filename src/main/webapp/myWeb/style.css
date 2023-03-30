@@ -1,79 +1,134 @@
-/* Reset CSS */
-* {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
-}
-
-/* Global Styles */
-body {
-  font-family: 'Noto Sans', sans-serif;
-  font-size: auto;
-  line-height: auto;
-  background-color: #f8f8f8;
-}
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
+}
+
+.row {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
+  margin: 0 -15px;
 }
 
-/* Header Styles */
-header {
-  background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
-  width: 100%;
-  padding: 20px 0;
+.col {
+  flex: 1;
+  padding: 0 15px;
 }
 
-.logo {
-  font-size: 24px;
-  font-weight: bold;
-  color: #333;
-  margin: 0 20px;
-}
-
-nav {
+/* 콘텐츠 스타일 */
+.header {
+  height: 100px;
+  background-color: blue;
+  color: #555;
   display: flex;
+  align-items: center;
   justify-content: center;
 }
 
-nav a {
-  color: #333;
-  text-decoration: none;
-  padding: 0 20px;
-  line-height: 1.5;
+.sidebar {
+  height: auto;
+  background-color: #f8f9fa;
 }
 
-nav a:hover {
-  color: #0070f3;
-}
-
-/* Main Styles */
-main {
-  width: 100%;
-  padding: 40px;
+.main {
+  height: auto;
   background-color: #fff;
-  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
 }
 
-h1 {
-  font-size: 36px;
-  font-weight: bold;
-  margin-bottom: 20px;
-}
-
-p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-/* Footer Styles */
-footer {
+.footer {
+  height: 100px;
   background-color: #333;
   color: #fff;
-  padding: 20px 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* 미디어 쿼리 */
+@media screen and (max-width: 768px) {
+  .col {
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+.no-number {
+  list-style-type: none;
+}
+
+/* 화이트 모드 */
+.white body {
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.white .header {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.white .sidebar {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  padding: 10px;
+}
+
+.white .main {
+  background-color: #f2f2f2;
+  border: 1px solid #ccc;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+/* 블랙 모드 */
+.black body {
+  background-color: #000000;
+  color: #ffffff;
+}
+
+.black .header {
+  background-color: #333333;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+.black .sidebar {
+  background-color: #333333;
+  border: 1px solid #000;
+  padding: 10px;
+}
+
+.black .main {
+  background-color: #333333;
+  border: 1px solid #000;
+  margin-bottom: 10px;
+  padding: 10px;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  height: 100%;
+}
+
+#target {
+  height: 100%;
+}
+
+.white {
+  background-color: white;
+  color: black;
+}
+
+.black {
+  background-color: black;
+  color: white;
+}
+
+.no-number li {
+  font-size: 1.2em;
 }
