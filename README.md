@@ -1,9 +1,10 @@
-# JSP-1-2
-JSP-1_startJSP, 2_formtag
-
+# JSP
 JSP를 배우는 공간입니다. 
-
-1장과 2장
+1장 JSP프로젝트작성
+2장 JSP폼 태그
+3장 유효성검사
+4장 Session
+5장 
 
 <img width="900" alt="1" src="https://user-images.githubusercontent.com/116303386/227281018-7010c436-f7ce-49df-ba7b-cd25f701b704.png">
 -------------------------------------------------------------------------------
