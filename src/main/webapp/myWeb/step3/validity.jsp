@@ -18,7 +18,7 @@
   <div class="row">
     <div class="col header">
       <header>
-			<h1 id="index"><a href="index.jsp">MyJSP</a></h1>
+			<h1 id="index"><a href="../index.jsp">MyJSP</a></h1>
 		</header>
     </div>
   </div>
